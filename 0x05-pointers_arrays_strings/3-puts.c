@@ -4,11 +4,13 @@
  *_string - in reverse by new line
  * prints a string
  */
-void _strings(char *str)
+void _puts(char *str)
 {
-	while (*str != '\0')
+	int z;
+
+	for (z = 0;*(str + z) != '\0'; z++)
 	{
-		_putchar(*str++);
+		_putchar(*(str + z));
 	}
 	_putchar('\n');
 }

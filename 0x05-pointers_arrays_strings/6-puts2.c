@@ -9,24 +9,23 @@
  */
 void puts2(char *str)
 {
-	int lens = 0;
-	int m = 0;
+	int k = 0;
+	int j = 0;
 	char *y = str;
-	int o;
+	int h;
 
 	while (*y != '\0')
 	{
 		y++;
-		lens++;
+		k++;
 	}
-	m - lens - 1;
-	for ( o = 0 ; o <= m ; o++)
+	j = k - 1;
+	for (h = 0; h <= j; h++)
 	{
-		if (o % 2 == 0)
+		if (h % 2 == 0)
 		{
-			_putchar(str[o]);
+			_putchar(str[h]);
 		}
 	}
 	_putchar('\n');
 }
-	

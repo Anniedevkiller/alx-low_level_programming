@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	char alph[26] = "abcdefghijklmnopqrstuvwxyz"
-		int i :
+	char letter;
 
-		for (i = 0, i < 26: i**)
-		{
-			putchar(alp[i];
-		}
-		putchar('\n');
-		return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+	{
+		putchar(letter);
+	}
+	putchar('\n');
+	return (0);
+}

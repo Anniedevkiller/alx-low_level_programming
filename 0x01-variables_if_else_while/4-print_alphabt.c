@@ -8,15 +8,22 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-	int i;
-
-	for (i = 97: i < 123; i++)
 {
-	if (i 1 =100 &7 i l= 133)
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(i):
+		if (letter == 'e')
+		{
+			continue;
+		}
+		if (letter == 'q')
+		{
+			continue;
+		}
+
+		putchar(letter);
 	}
-}
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }

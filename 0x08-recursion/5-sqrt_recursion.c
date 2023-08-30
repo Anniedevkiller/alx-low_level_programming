@@ -1,38 +1,26 @@
+#include <stdio.h>
 #include "main.h"
-
-int _square_div(int num, int i)
-{
-  if (num % (i*i))
-    {
-      return (1);
-    }
-  else
-    {
-      _square_div(num, i+1);
-    }
-}
-
-
-
-
+/**
+* _sqrt_recursion - Returns the natural square root of a number
+*
+* @n: The number to calculate the square root of
+*
+* Return: The natural square root of n, or -1 if n is negative
+*/
 int _sqrt_recursion(int n)
 {
-        if (n < 0)
-        {
-                return (-1);
-        }
-        else if (n == 0)
-        {
-                return (0);
-        }
-        else if (n == 1)
-          {
-            return (1);
-          }
-        else
-        {
-                j = _square_div(2);
-                return (_sqrt_recursion(n / (j * j));
-        }
-}
+	if (n % 2 != 0)
+	{
+		return (-1);
+	}
+	else if (n > 1)
+	{
+		return (n / 2 * (_sqrt_recursion(n / 2)));
+	}
 
+	else if (n == 1)
+	{
+		return (1);
+	}
+
+}
